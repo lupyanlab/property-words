@@ -1,0 +1,10 @@
+sample_trials.csv
+*.swp
+.DS_Store
+*.pyc
+*.pickle
+*.json
+*.html
+.Rproj.user
+.Rhistory
+.RData
