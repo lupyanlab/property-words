@@ -1,0 +1,89 @@
+introduction:
+  1:
+    tag: title
+    main: >
+      Welcome to the MWP experiment! Press the SPACEBAR to begin.
+  2:
+    main: >
+      In today's experiment you will answer some simple yes or no questions
+      about familiar objects like dogs, chairs, and elephants.
+
+
+      Think about it like a game you might play with a child who is learning
+      about these objects for the first time. First you'll read the question (for
+      example, 'Does it have feathers?'), then you'll hear the name of an
+      object, like 'eagle' or 'table'.
+
+
+      Your job is answer the 'yes' or 'no' question as quickly and accurately as
+      possible using the keyboard. If the answer is yes, press the up arrow.
+      Otherwise, press the down arrow. Answer the question below using the keyboard.
+    example: "Does it have feathers? --> eagle"
+    advance: up
+  3:
+    main: >
+      Some of the questions may sound a bit weird. If the question doesn't make sense,
+      the answer is most likely 'no'. Answer the question below using the keyboard.
+    example: "Does it have feathers? --> pineapple"
+    advance: down
+  4:
+    main: >
+      Other questions will be true for some items in a category, but not all items.
+      In these cases, the answer is 'yes'. An example of one of these questions is
+      below. Answer it to continue.
+    example: "Is it green? --> apple"
+    advance: up
+  5:
+    tag: word_apple
+    main: >
+      For some of the questions, instead of seeing a prompt that says "Yes or No?"
+      you will see a printed word. On these trials, instead of answering
+      the question, you will instead answer whether or not the word is the same
+      as the named object. If you see the word you just heard through the
+      headphones, press the up arrow. If it's a different word, press the down
+      arrow.
+
+
+      Respond to the word below as if you had heard "apple" in the previous
+      question.
+    example: "raisin"
+    advance: down
+  6:
+    tag: mask
+    main: >
+      On some trials you will see flashing colorful patterns, like the one below.
+      Please remain looking at the computer screen even when the mask is flashing.
+      Press the SPACEBAR to continue.
+  7:
+    main: >
+      You are done with the instructions. If you have any questions, let the
+      experimenter know. You will begin with some practice trials. Press the
+      SPACEBAR when you are ready to begin the practice trials.
+timeout: >
+  You missed one! Please respond as quickly and accurately as you can. Take a
+  moment to rest if you need it. When you are ready to continue, press the
+  SPACEBAR.
+end_of_practice: >
+  You've completed the practice trials. Are you ready to begin the
+  next part of the experiment? You won't receive any feedback for this part,
+  so do your best to answer as quickly and accurately as you can.
+
+
+  As you saw in the practice trials, you cannot respond until you see
+  the prompt "Yes or No?" or until you see the printed word. Do not try to
+  respond before you see what question you are supposed to answer.
+
+
+  Finally, please make sure to look at the central "+" while you are
+  listening for the named object.
+
+
+  When you are ready to being, press the SPACEBAR.
+break_screen: >
+  You've finished one part of the experiment. Take a quick break, but please
+  stay in the room. When you are ready to continue, press the SPACEBAR.
+end_of_experiment: >
+  You've finished the experiment. The next thing for you to do is to complete
+  a survey. This survey will appear in a web browser after you press the
+  SPACEBAR. If you do not see the survey or have any problems submitting your
+  responses, please let the experimenter know. Thank you for participating!

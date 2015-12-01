@@ -373,9 +373,9 @@ class Experiment(object):
     def show_instructions(self):
         introduction = sorted(self.texts['introduction'].items())
 
-        text_kwargs = dict(wrapWidth=1000, color='black', font='Consolas')
-        main = visual.TextStim(self.win, pos=[0, 200], **text_kwargs)
-        example = visual.TextStim(self.win, pos=[0, -50], **text_kwargs)
+        text_kwargs = dict(win=self.win, wrapWidth=1000, color='black', font='Consolas')
+        main = visual.TextStim(pos=[0, 200], **text_kwargs)
+        example = visual.TextStim(pos=[0, -50], **text_kwargs)
         example.setHeight(30)
 
         for i, block in introduction:
@@ -397,12 +397,8 @@ class Experiment(object):
                 example.setText(example_txt)
                 example.draw()
 
-            if tag == 'pic_apple':
-                img_path = str(Path('stimuli', 'pics', 'apple.bmp'))
-                apple = visual.ImageStim(self.win, img_path, pos=[0, -100])
-                apple.draw()
-            elif tag == 'mask':
-                img_path = str(Path('stimuli', 'dynamic_mask', 'colored_1.png'))
+            if tag == 'mask':
+                img_path = str(unipath.Path('labtools', 'dynamic_mask', 'colored_1.png'))
                 mask = visual.ImageStim(self.win, img_path, pos=[0, -100])
                 mask.draw()
 
@@ -507,5 +503,8 @@ if __name__ == '__main__':
         experiment = make_experiment()
         trials = Trials.load('sample_trials.csv')
         experiment.run_trial(trials[args.trial_index])
+    elif args.command == 'texts':
+        experiment = make_experiment()
+        experiment.show_instructions()
     else:
         raise NotImplementedError

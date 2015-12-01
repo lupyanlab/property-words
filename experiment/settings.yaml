@@ -7,6 +7,6 @@ waits:
   mask_refresh: 0.01
   iti: 1.5
 response_keys:
-  up: yes
-  down: no
+  up: "yes"
+  down: "no"
 survey_url: test123.com
