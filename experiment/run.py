@@ -361,7 +361,9 @@ class Experiment(object):
         trial['rt'] = rt * 1000
         trial['is_correct'] = is_correct
 
-        self.feedback[is_correct].play()
+        if trial['block_type'] == 'practice' or trial['response_type'] == 'word':
+            self.feedback[is_correct].play()
+
         if response == 'timeout':
             self.show_timeout_screen()
 
