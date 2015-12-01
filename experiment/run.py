@@ -97,6 +97,7 @@ class Trials(UserList):
         'feat_type',
         'question',
         'cue',
+        'cue_file',
         'mask_type',
         'response_type', # prompt or word
         'word',
@@ -147,8 +148,17 @@ class Trials(UserList):
         categories = propositions.cue.unique()
         trials['cue'] = prng.choice(categories, len(trials), replace=True)
 
-        _propositions = propositions.copy()
+        cue_info_csv = unipath.Path(cls.STIM_DIR, 'cues', '_cue_info.csv')
+        cues = pandas.read_csv(cue_info_csv)
 
+        def determine_cue_file(row):
+            options = cues.ix[cues.cue == row['cue'], 'cue_file'].values
+            return prng.choice(options)
+
+        trials['cue_file'] = trials.apply(determine_cue_file, axis=1)
+
+        # copy propositions to prevent duplicate questions
+        _propositions = propositions.copy()
         def determine_question(row):
             is_cue = (_propositions.cue == row['cue'])
             is_feat_type = (_propositions.feat_type == row['feat_type'])
