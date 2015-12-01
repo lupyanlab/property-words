@@ -65,12 +65,11 @@ timeout: >
   SPACEBAR.
 end_of_practice: >
   You've completed the practice trials. Are you ready to begin the
-  next part of the experiment? You won't receive any feedback for this part,
-  so do your best to answer as quickly and accurately as you can.
+  next part of the experiment?
 
 
-  As you saw in the practice trials, you cannot respond until you see
-  the prompt "Yes or No?" or until you see the printed word. Do not try to
+  As you figured out in the practice trials, you cannot respond until you see
+  the prompt "?" or until you see the printed word. Do not try to
   respond before you see what question you are supposed to answer.
 
 

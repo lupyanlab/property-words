@@ -268,7 +268,7 @@ class Experiment(object):
                            color='black', wrapWidth=400)
         self.fix = visual.TextStim(text='+', **text_kwargs)
         self.question = visual.TextStim(**text_kwargs)
-        self.prompt = visual.TextStim(text='Yes or No?', **text_kwargs)
+        self.prompt = visual.TextStim(text='?', **text_kwargs)
         self.word = visual.TextStim(**text_kwargs)
 
         self.cues = load_sounds(unipath.Path(self.STIM_DIR, 'cues'),
@@ -360,9 +360,8 @@ class Experiment(object):
         trial['rt'] = rt * 1000
         trial['is_correct'] = is_correct
 
-        if trial['block_type'] == 'practice':
-            self.feedback[is_correct].play()
 
+        self.feedback[is_correct].play()
         if response == 'timeout':
             self.show_timeout_screen()
 
