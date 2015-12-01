@@ -1,11 +1,11 @@
 waits:
   fix_duration: 1.0
   question_duration: 1.5
-  question_offset_to_cue_onset: 0.5
+  question_offset_to_cue_onset: 0.4
   cue_offset_to_response_onset: 0.1
-  max_wait: 1.5
+  max_wait: 1.25
   mask_refresh: 0.01
-  iti: 1.5
+  iti: 1.0
 response_keys:
   up: "yes"
   down: "no"
