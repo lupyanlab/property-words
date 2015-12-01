@@ -507,4 +507,4 @@ if __name__ == '__main__':
         experiment = make_experiment()
         experiment.show_instructions()
     else:
-        raise NotImplementedError
+		main()
