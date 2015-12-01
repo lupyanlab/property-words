@@ -512,4 +512,4 @@ if __name__ == '__main__':
         import webbrowser
         webbrowser.open(experiment.survey_url.format(subj_id='test-subj', computer='test-computer'))
     else:
-		main()
+        main()
