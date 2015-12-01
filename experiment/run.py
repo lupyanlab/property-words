@@ -264,14 +264,15 @@ class Experiment(object):
 
         self.win = visual.Window(fullscr=True, units='pix')
 
-        text_kwargs = dict(win=self.win, height=60, font='Consolas',
-                           color='black')
+        text_kwargs = dict(win=self.win, height=30, font='Consolas',
+                           color='black', wrapWidth=400)
         self.fix = visual.TextStim(text='+', **text_kwargs)
         self.question = visual.TextStim(**text_kwargs)
         self.prompt = visual.TextStim(text='Yes or No?', **text_kwargs)
         self.word = visual.TextStim(**text_kwargs)
 
-        self.cues = load_sounds(unipath.Path(self.STIM_DIR, 'cues'))
+        self.cues = load_sounds(unipath.Path(self.STIM_DIR, 'cues'),
+                                include_ext=True)  # key names strawberry_1.wav
 
         size = [400, 400]
         image_kwargs = dict(win=self.win, size=size)
@@ -288,12 +289,12 @@ class Experiment(object):
         """ Run a trial using a dict of settings. """
         self.question.setText(trial['question'])
 
-        cue = self.cues[trial['cue']]
-        cue_dur = question.getDuration()
+        cue = self.cues[trial['cue_file']]
+        cue_dur = cue.getDuration()
 
         stim_during_cue = [self.fix, ]
         if trial['mask_type'] == 'mask':
-            stim_during_cue.inset(0, self.mask)
+            stim_during_cue.insert(0, self.mask)
 
         response_type = trial['response_type']
         if response_type == 'prompt':
@@ -506,6 +507,5 @@ if __name__ == '__main__':
         experiment = make_experiment()
         trials = Trials.load('sample_trials.csv')
         experiment.run_trial(trials[args.trial_index])
-
     else:
         raise NotImplementedError

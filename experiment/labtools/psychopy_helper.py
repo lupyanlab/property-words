@@ -73,12 +73,13 @@ def get_subj_info(gui_yaml, check_exists, save_order=True):
     return subj_info
 
 
-def load_sounds(stim_dir, match='*.wav'):
+def load_sounds(stim_dir, match='*.wav', include_ext=False):
     sound_files = unipath.Path(stim_dir).listdir(match)
     sounds = {}
     for sound_file in sound_files:
+        key = sound_file.stem if not include_ext else sound_file.name
         str_path = str(sound_file)  # psychopy chokes on unipath.Path
-        sounds[sound_file.stem] = sound.Sound(str_path)
+        sounds[key] = sound.Sound(str_path)
     return sounds
 
 

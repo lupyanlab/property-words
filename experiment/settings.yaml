@@ -4,6 +4,8 @@ waits:
   question_offset_to_cue_onset: 0.5
   cue_offset_to_response_onset: 0.1
   max_wait: 1.5
+  mask_refresh: 0.01
+  iti: 1.5
 response_keys:
   up: yes
   down: no
