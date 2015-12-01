@@ -460,6 +460,8 @@ def main():
 
     participant.write_header(trials.COLUMNS)
 
+    last_block = trials[-1]['block']
+
     for block in trials.iter_blocks():
         block_type = block[0]['block_type']
 
@@ -469,7 +471,7 @@ def main():
 
         if block_type == 'practice':
             experiment.show_end_of_practice_screen()
-        else:
+        elif block['block'] != last_block:
             experiment.show_break_screen()
 
     experiment.show_end_of_experiment_screen()
