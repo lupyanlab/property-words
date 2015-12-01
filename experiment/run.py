@@ -361,7 +361,6 @@ class Experiment(object):
         trial['rt'] = rt * 1000
         trial['is_correct'] = is_correct
 
-
         self.feedback[is_correct].play()
         if response == 'timeout':
             self.show_timeout_screen()
@@ -506,5 +505,9 @@ if __name__ == '__main__':
     elif args.command == 'texts':
         experiment = make_experiment()
         experiment.show_instructions()
+    elif args.command == 'survey':
+        experiment = make_experiment()
+        import webbrowser
+        webbrowser.open(experiment.survey_url.format(subj_id='test-subj', computer='test-computer'))
     else:
 		main()
