@@ -1,0 +1,10 @@
+waits:
+  fix_duration: 1.0
+  question_duration: 1.5
+  question_offset_to_cue_onset: 0.5
+  cue_offset_to_response_onset: 0.1
+  max_wait: 1.5
+response_keys:
+  up: yes
+  down: no
+survey_url: test123.com

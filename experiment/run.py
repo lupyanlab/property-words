@@ -5,6 +5,7 @@ from UserList import UserList
 import pandas
 from numpy import random
 import unipath
+import yaml
 
 from psychopy import prefs
 try:
@@ -83,7 +84,6 @@ class Participant(UserDict):
         with open(self.data_file, 'a') as f:
             f.write(row + '\n')
 
-
 class Trials(UserList):
     STIM_DIR = unipath.Path('stimuli')
     COLUMNS = [
@@ -95,7 +95,7 @@ class Trials(UserList):
         # Stimuli columns
         'proposition_id',
         'feat_type',
-        'question_slug',
+        'question',
         'cue',
         'mask_type',
         'response_type', # prompt or word
@@ -215,6 +215,11 @@ class Trials(UserList):
 
         return cls(trials.to_dict('record'))
 
+    @classmethod
+    def load(cls, trials_csv):
+        trials = pandas.read_csv(trials_csv)
+        return cls(trials.to_dict('records'))
+
     def write_trials(self, trials_csv):
         trials = pandas.DataFrame.from_records(self)
         trials = trials[self.COLUMNS]
@@ -232,6 +237,240 @@ class Trials(UserList):
                 block = trial[key]
                 trials_in_block = []
 
+
+class Experiment(object):
+    STIM_DIR = unipath.Path('stimuli')
+
+    def __init__(self, settings_yaml, texts_yaml):
+        with open(settings_yaml, 'r') as f:
+            exp_info = yaml.load(f)
+
+        self.waits = exp_info.pop('waits')
+        self.response_keys = exp_info.pop('response_keys')
+        self.survey_url = exp_info.pop('survey_url')
+
+        with open(texts_yaml, 'r') as f:
+            self.texts = yaml.load(f)
+
+        self.win = visual.Window(fullscr=True, units='pix')
+
+        text_kwargs = dict(win=self.win, height=60, font='Consolas',
+                           color='black')
+        self.fix = visual.TextStim(text='+', **text_kwargs)
+        self.question = visual.TextStim(**text_kwargs)
+        self.prompt = visual.TextStim(text='Yes or No?', **text_kwargs)
+        self.word = visual.TextStim(**text_kwargs)
+
+        self.cues = load_sounds(unipath.Path(self.STIM_DIR, 'cues'))
+
+        size = [400, 400]
+        image_kwargs = dict(win=self.win, size=size)
+        self.mask = DynamicMask(**image_kwargs)
+
+        feedback_dir = unipath.Path(self.STIM_DIR, 'feedback')
+        self.feedback = {}
+        self.feedback[0] = sound.Sound(unipath.Path(feedback_dir, 'buzz.wav'))
+        self.feedback[1] = sound.Sound(unipath.Path(feedback_dir, 'bleep.wav'))
+
+        self.timer = core.Clock()
+
+    def run_trial(self, trial):
+        """ Run a trial using a dict of settings. """
+        self.question.setText(trial['question'])
+
+        cue = self.cues[trial['cue']]
+        cue_dur = question.getDuration()
+
+        stim_during_cue = [self.fix, ]
+        if trial['mask_type'] == 'mask':
+            stim_during_cue.inset(0, self.mask)
+
+        response_type = trial['response_type']
+        if response_type == 'prompt':
+            response_stim = self.prompt
+        elif response_type == 'word':
+            self.word.setText(trial['word'])
+            response_stim = self.word
+        else:
+            raise NotImplementedError('response type %s' % response_type)
+
+        # Start trial presentation
+        # ------------------------
+        self.timer.reset()
+        self.fix.draw()
+        self.win.flip()
+        core.wait(self.waits['fix_duration'])
+
+        # Show the question
+        self.timer.reset()
+        self.question.draw()
+        self.win.flip()
+        core.wait(self.waits['question_duration'])
+
+        # Delay between question offset and cue onset
+        self.fix.draw()
+        self.win.flip()
+        core.wait(self.waits['question_offset_to_cue_onset'])
+
+        # Play the cue
+        self.timer.reset()
+        cue.play()
+        while self.timer.getTime() < cue_dur:
+            [stim.draw() for stim in stim_during_cue]
+            self.win.flip()
+            core.wait(self.waits['mask_refresh'])
+
+        # Cue offset to response onset
+        self.win.flip()
+        core.wait(self.waits['cue_offset_to_response_onset'])
+
+        # Show the response prompt
+        self.timer.reset()
+        response_stim.draw()
+        self.win.flip()
+        response = event.waitKeys(maxWait=self.waits['max_wait'],
+                                  keyList=self.response_keys.keys(),
+                                  timeStamped=self.timer)
+        self.win.flip()
+        # ----------------------
+        # End trial presentation
+
+        try:
+            key, rt = response[0]
+        except TypeError:
+            rt = self.waits['max_wait']
+            response = 'timeout'
+        else:
+            response = self.response_keys[key]
+
+        is_correct = int(response == trial['correct_response'])
+
+        trial['response'] = response
+        trial['rt'] = rt * 1000
+        trial['is_correct'] = is_correct
+
+        if trial['block_type'] == 'practice':
+            self.feedback[is_correct].play()
+
+        if response == 'timeout':
+            self.show_timeout_screen()
+
+        core.wait(self.waits['iti'])
+
+        return trial
+
+    def show_instructions(self):
+        introduction = sorted(self.texts['introduction'].items())
+
+        text_kwargs = dict(wrapWidth=1000, color='black', font='Consolas')
+        main = visual.TextStim(self.win, pos=[0, 200], **text_kwargs)
+        example = visual.TextStim(self.win, pos=[0, -50], **text_kwargs)
+        example.setHeight(30)
+
+        for i, block in introduction:
+            # For logic continent on block kwargs:
+            tag = block.pop('tag', None)
+            example_txt = block.pop('example', None)
+            advance_keys = [block.get('advance', 'space'), 'q']
+
+            # Draw main
+            main.setText(block['main'])
+            if tag == 'title':
+                main.setHeight(50)
+            else:
+                main.setHeight(20)
+            main.draw()
+
+            # Draw example
+            if example_txt:
+                example.setText(example_txt)
+                example.draw()
+
+            if tag == 'pic_apple':
+                img_path = str(Path('stimuli', 'pics', 'apple.bmp'))
+                apple = visual.ImageStim(self.win, img_path, pos=[0, -100])
+                apple.draw()
+            elif tag == 'mask':
+                img_path = str(Path('stimuli', 'dynamic_mask', 'colored_1.png'))
+                mask = visual.ImageStim(self.win, img_path, pos=[0, -100])
+                mask.draw()
+
+            self.win.flip()
+            key = event.waitKeys(keyList=advance_keys)[0]
+
+            if key == 'q':
+                core.quit()
+
+            if key in ['up', 'down']:
+                self.feedback[1].play()
+
+    def show_end_of_practice_screen(self):
+        visual.TextStim(self.win, text=self.texts['end_of_practice'],
+                        height=30, wrapWidth=600, color='black',
+                        font='Consolas').draw()
+        self.win.flip()
+        event.waitKeys(keyList=['space', ])
+
+    def show_timeout_screen(self):
+        visual.TextStim(self.win, text=self.texts['timeout'],
+                        height=30, wrapWidth=600, color='black',
+                        font='Consolas').draw()
+        self.win.flip()
+        event.waitKeys(keyList=['space', ])
+
+    def show_break_screen(self):
+        visual.TextStim(self.win, text=self.texts['break_screen'],
+                        height=30, wrapWidth=600, color='black',
+                        font='Consolas').draw()
+        self.win.flip()
+        event.waitKeys(keyList=['space', ])
+
+    def show_end_of_experiment_screen(self):
+        visual.TextStim(self.win, text=self.texts['end_of_experiment'],
+                        height=30, wrapWidth=600, color='black',
+                        font='Consolas').draw()
+        self.win.flip()
+        event.waitKeys(keyList=['space', ])
+
+def make_experiment():
+    return Experiment('settings.yaml', 'texts.yaml')
+
+def main():
+    participant_data = get_subj_info(
+        'gui.yaml',
+        # check_exists is a simple function to determine if the data file
+        # exists, provided subj_info data. Here it's used to check for
+        # uniqueness in subj_ids when getting info from gui.
+        check_exists=lambda subj_info:
+            Participant(**subj_info).data_file.exists()
+    )
+
+    participant = Participant(**participant_data)
+    trials = Trials.make(**participant)
+
+    # Start of experiment
+    experiment = make_experiment()
+    experiment.show_instructions()
+
+    participant.write_header(trials.COLUMNS)
+
+    for block in trials.iter_blocks():
+        block_type = block[0]['block_type']
+
+        for trial in block:
+            trial_data = experiment.run_trial(trial)
+            participant.write_trial(trial_data)
+
+        if block_type == 'practice':
+            experiment.show_end_of_practice_screen()
+        else:
+            experiment.show_break_screen()
+
+    experiment.show_end_of_experiment_screen()
+
+    import webbrowser
+    webbrowser.open(experiment.survey_url.format(**participant))
+
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
@@ -242,6 +481,8 @@ if __name__ == '__main__':
     )
     parser.add_argument('--output', '-o', help='Name of output file')
     parser.add_argument('--seed', '-s', help='Seed')
+    parser.add_argument('--trial-index', '-i', default=0, type=int,
+                        help='Trial index to run from sample_trials.csv')
 
     args = parser.parse_args()
 
@@ -251,5 +492,10 @@ if __name__ == '__main__':
         print "Making trials with seed %s: %s" % (seed, output)
         trials = Trials.make(seed=seed)
         trials.write_trials(args.output or 'sample_trials.csv')
+    elif args.command == 'trial':
+        experiment = make_experiment()
+        trials = Trials.load('sample_trials.csv')
+        experiment.run_trial(trials[args.trial_index])
+
     else:
         raise NotImplementedError

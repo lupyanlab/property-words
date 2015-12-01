@@ -3,13 +3,12 @@ import unipath
 from psychopy.visual import ImageStim
 
 class DynamicMask(object):
-    def __init__(self, frames_dir, key='colored', **kwargs):
+    def __init__(self, **kwargs):
         """
-        :param frames_dir: path to mask files
-        :param key: str key to identify the correct set of masks
         :param **kwargs: args to pass to visual.ImageStim
         """
-        mask_files = unipath.Path(frames_dir).listdir('*.png')
+        labtools_dir = unipath.Path(__file__).absolute().parent
+        mask_files = unipath.Path(labtools_dir, 'dynamic_mask').listdir('*.png')
         self.masks = [ImageStim(image = str(pth), **kwargs) for pth in mask_files]
         self.cur_ix = 0
 
