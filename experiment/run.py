@@ -84,6 +84,7 @@ class Participant(UserDict):
         with open(self.data_file, 'a') as f:
             f.write(row + '\n')
 
+
 class Trials(UserList):
     STIM_DIR = unipath.Path('stimuli')
     COLUMNS = [
@@ -262,7 +263,7 @@ class Experiment(object):
         with open(texts_yaml, 'r') as f:
             self.texts = yaml.load(f)
 
-        self.win = visual.Window(fullscr=True, units='pix')
+        self.win = visual.Window(fullscr=True, units='pix', allowGUI=False)
 
         text_kwargs = dict(win=self.win, height=30, font='Consolas',
                            color='black', wrapWidth=400)
