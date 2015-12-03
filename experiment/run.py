@@ -318,14 +318,9 @@ class Experiment(object):
         if trial['mask_type'] == 'mask':
             stim_during_cue.insert(0, self.mask)
 
-        response_type = trial['response_type']
-        if response_type == 'prompt':
-            response_stim = self.prompt
-        elif response_type == 'word':
-            self.word.setText(trial['word'])
-            response_stim = self.word
-        else:
-            raise NotImplementedError('response type %s' % response_type)
+        response_stim_sound = None
+        if trial['response_type'] == 'word':
+            response_stim_sound = self.cues[trial['word_file']]
 
         # Start trial presentation
         # ------------------------
@@ -359,7 +354,9 @@ class Experiment(object):
 
         # Show the response prompt
         self.timer.reset()
-        response_stim.draw()
+        self.prompt.draw()
+        if response_stim_sound:
+            response_stim_sound.play()
         self.win.flip()
         response = event.waitKeys(maxWait=self.waits['max_wait'],
                                   keyList=self.response_keys.keys(),
