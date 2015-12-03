@@ -184,6 +184,11 @@ class Trials(UserList):
         # Merge in question
         trials = trials.merge(propositions)
 
+        # Replace proposition on word trials
+        trials.loc[trials.response_type == 'word', 'question'] = '----------'
+        for prop_col in ['question_slug', 'feat_type', 'proposition_id']:
+            trials.loc[trials.response_type == 'word', prop_col] = ''
+
         # Add in word
         def determine_word(row):
             if row['response_type'] != 'word':
