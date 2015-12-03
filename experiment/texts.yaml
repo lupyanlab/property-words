@@ -36,9 +36,10 @@ introduction:
   5:
     tag: word_apple
     main: >
-      For some of the questions, instead of seeing a prompt that says "Yes or No?"
-      you will see a printed word. On these trials, instead of answering
-      the question, you will instead answer whether or not the word is the same
+      For some of the questions, instead of reading a question you will see
+      some dashes printed on the screen, and then you will hear the name of
+      an object. After the name, you will be presented a printed word. On
+      these trials, you will answer whether or not the word is the same
       as the named object. If you see the word you just heard through the
       headphones, press the up arrow. If it's a different word, press the down
       arrow.
