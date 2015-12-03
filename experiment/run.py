@@ -102,6 +102,7 @@ class Trials(UserList):
         'mask_type',
         'response_type', # prompt or word
         'word',
+        'word_file',
         'correct_response',
 
         # Response columns
@@ -153,7 +154,7 @@ class Trials(UserList):
         cues = pandas.read_csv(cue_info_csv)
 
         def determine_cue_file(row):
-            options = cues.ix[cues.cue == row['cue'], 'cue_file'].values
+            options = cues.ix[cues.cue == row['cue'], 'cue_file'].tolist()
             return prng.choice(options)
 
         trials['cue_file'] = trials.apply(determine_cue_file, axis=1)
@@ -169,7 +170,11 @@ class Trials(UserList):
             valid_propositions = (is_cue & is_feat_type & is_correct_response)
 
             if valid_propositions.sum() == 0:
-                trials.ix[row.name, 'cue'] = prng.choice(categories)
+                # no more propositions for this cue!
+                # switch to a different cue and try again
+                # row.name is the index for this row
+                trials.loc[row.name, 'cue'] = prng.choice(categories)
+                trials.loc[row.name, 'cue_file'] = determine_cue_file(trials.ix[row.name])
                 return determine_question(trials.ix[row.name, ])
 
             options = _propositions.ix[valid_propositions, ]
@@ -201,6 +206,17 @@ class Trials(UserList):
                 return prng.choice(distractors)
 
         trials['word'] = trials.apply(determine_word, axis=1)
+
+        # for V2, the word is now auditory, so a file must be selected
+        def determine_word_file(row):
+            if row['response_type'] == 'prompt':
+                return ''
+            options = cues.ix[cues.cue == row['word'], 'cue_file'].tolist()
+            if row['cue_file'] in options:
+                options.remove(row['cue_file'])
+            return prng.choice(options)
+
+        trials['word_file'] = trials.apply(determine_word_file, axis=1)
 
         # Add columns for response variables
         for col in ['response', 'rt', 'is_correct']:
