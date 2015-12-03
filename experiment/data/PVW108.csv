@@ -1,0 +1,192 @@
+subj_id,seed,date,computer,block,block_type,trial,proposition_id,feat_type,question,cue,cue_file,mask_type,response_type,word,correct_response,response,rt,is_correct
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,0,raccoon:visual:no:6,visual,Is it black?,raccoon,raccoon_2.wav,mask,word,elephant,no,yes,688.379276544,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,1,rabbit:visual:yes:1,visual,Does it have ears?,rabbit,swan_3.wav,mask,word,rabbit,yes,no,227.955994429,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,2,mouse:visual:yes:1,visual,Does it have a tail?,mouse,mouse_1.wav,nomask,prompt,,yes,yes,500.107548898,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,3,giraffe:nonvisual:yes:4,nonvisual,Is it a mammal?,giraffe,giraffe_2.wav,nomask,word,giraffe,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,4,lion:visual:yes:3,visual,Does it have a tail?,lion,raccoon_2.wav,nomask,prompt,,yes,yes,345.789588289,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,5,camel:visual:yes:3,visual,Does it have legs?,camel,chair_3.wav,mask,prompt,,yes,yes,600.330969086,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,6,tiger:visual:no:1,visual,Is it black?,tiger,tiger_4.wav,nomask,prompt,,no,no,502.527719364,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,0,practice,7,swan:nonvisual:yes:2,nonvisual,Is it a bird?,swan,swan_4.wav,mask,word,swan,yes,yes,54.8153743148,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,9,chicken:nonvisual:yes:4,nonvisual,Is it eaten by frying?,chicken,grasshopper_4.wav,mask,prompt,,yes,no,726.943882648,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,10,giraffe:visual:yes:4,visual,Is it brown?,giraffe,giraffe_2.wav,mask,prompt,,yes,no,703.652181895,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,11,deer:visual:no:1,visual,Is it yellow?,deer,deer_3.wav,nomask,prompt,,no,no,407.855871599,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,12,chair:nonvisual:yes:5,nonvisual,Is it found at tables?,chair,chair_2.wav,mask,prompt,,yes,yes,202.45538,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,13,apple:visual:yes:5,visual,Does it have a core?,apple,table_2.wav,mask,prompt,,yes,no,364.328651689,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,14,strawberry:nonvisual:no:2,nonvisual,Is it an insect?,strawberry,strawberry_3.wav,nomask,prompt,,no,no,360.83491263,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,15,table:nonvisual:yes:1,nonvisual,Is it used for eating on?,table,table_3.wav,mask,prompt,,yes,yes,20.0905203819,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,16,dog:visual:yes:6,visual,Does it have a top?,dog,dog_4.wav,nomask,prompt,,yes,no,622.944407398,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,17,table:nonvisual:yes:3,nonvisual,Is it found in dining rooms?,table,table_4.wav,nomask,word,table,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,18,dog:nonvisual:yes:4,nonvisual,Is it used for protection?,dog,dog_4.wav,nomask,prompt,,yes,yes,327.333107125,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,19,grasshopper:visual:yes:4,visual,Does it have antennae?,grasshopper,grasshopper_2.wav,nomask,prompt,,yes,yes,240.555541124,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,20,pig:visual:yes:1,visual,Is it pink?,pig,pig_1.wav,nomask,word,pig,yes,yes,294.442986371,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,21,raccoon:visual:yes:5,visual,Does it have a mask?,raccoon,raccoon_3.wav,mask,prompt,,yes,yes,228.688671486,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,22,chair:nonvisual:yes:3,nonvisual,Is it comfortable?,chair,chair_3.wav,nomask,prompt,,yes,no,215.901234187,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,23,alligator:visual:no:2,visual,Is it grey?,alligator,alligator_3.wav,mask,word,giraffe,no,no,397.457556566,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,24,apple:nonvisual:yes:5,nonvisual,Is it used for cider?,apple,apple_4.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,25,penguin:visual:yes:3,visual,Does it have feet?,penguin,penguin_3.wav,nomask,word,penguin,yes,yes,44.4541892502,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,26,deer:visual:no:4,visual,Does it have a cushion?,deer,deer_2.wav,nomask,prompt,,no,no,395.757259568,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,27,mouse:nonvisual:yes:5,nonvisual,Does it eat cheese?,mouse,penguin_3.wav,nomask,prompt,,yes,no,295.627624728,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,28,dog:visual:yes:3,visual,Does it have a tail?,dog,dog_2.wav,mask,prompt,,yes,yes,112.196238246,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,29,tiger:visual:yes:5,visual,Does it have large teeth?,tiger,tiger_3.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,30,elephant:visual:yes:1,visual,Is it grey?,elephant,elephant_4.wav,nomask,prompt,,yes,yes,81.5659249201,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,31,zebra:visual:no:1,visual,Is it red?,zebra,zebra_3.wav,nomask,prompt,,no,no,198.82720476,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,32,camel:visual:yes:2,visual,Is it brown?,camel,camel_1.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,33,grasshopper:visual:yes:1,visual,Is it green?,grasshopper,grasshopper_2.wav,mask,word,grasshopper,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,34,pineapple:visual:yes:5,visual,Does it have a core?,pineapple,pineapple_4.wav,nomask,prompt,,yes,yes,110.355743673,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,35,donkey:nonvisual:yes:4,nonvisual,Is it furry?,donkey,donkey_1.wav,nomask,prompt,,yes,yes,383.60615354,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,36,chair:visual:yes:3,visual,Does it have armrests?,chair,chair_4.wav,nomask,prompt,,yes,yes,706.50638896,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,37,table:nonvisual:no:4,nonvisual,Does it grow in Hawaii?,table,table_3.wav,mask,prompt,,no,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,38,chicken:visual:yes:2,visual,Does it have wings?,chicken,giraffe_2.wav,mask,prompt,,yes,no,302.577332826,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,39,donkey:visual:yes:3,visual,Does it have a tail?,donkey,pig_3.wav,nomask,word,donkey,yes,no,662.461909698,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,40,zebra:visual:yes:3,visual,Does it have hooves?,zebra,zebra_2.wav,nomask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,41,giraffe:nonvisual:yes:1,nonvisual,Does it eat leaves?,giraffe,giraffe_3.wav,nomask,prompt,,yes,yes,778.15284743,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,42,deer:nonvisual:yes:1,nonvisual,Is it hunted by people?,deer,deer_3.wav,nomask,prompt,,yes,yes,191.332390066,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,43,alligator:visual:yes:4,visual,Does it have a tail?,alligator,alligator_1.wav,mask,word,alligator,yes,no,155.54068936,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,44,mouse:nonvisual:no:1,nonvisual,Is it a fruit?,mouse,mouse_3.wav,mask,word,camel,no,yes,926.774556981,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,45,penguin:visual:yes:4,visual,Does it have wings?,penguin,table_2.wav,mask,prompt,,yes,no,83.3241576329,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,46,alligator:visual:no:5,visual,Is it made of metal?,alligator,alligator_1.wav,nomask,prompt,,no,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,47,swan:visual:yes:1,visual,Does it have a long neck?,swan,swan_2.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,48,pineapple:nonvisual:yes:4,nonvisual,Does it grow in Hawaii?,pineapple,pineapple_3.wav,mask,prompt,,yes,yes,12.6498001628,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,49,zebra:visual:yes:2,visual,Does it have four legs?,zebra,zebra_1.wav,mask,prompt,,yes,yes,540.444471641,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,50,pig:nonvisual:yes:3,nonvisual,Is it eaten as bacon?,pig,pig_4.wav,nomask,prompt,,yes,yes,152.585334843,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,51,strawberry:visual:no:2,visual,Does it have a tail?,strawberry,strawberry_3.wav,nomask,prompt,,no,no,173.523443053,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,52,tiger:nonvisual:yes:4,nonvisual,Does it live in zoos?,tiger,tiger_4.wav,mask,word,tiger,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,53,bottle:nonvisual:yes:5,nonvisual,Is it used for holding beer?,bottle,bottle_1.wav,mask,prompt,,yes,yes,187.284582062,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,54,camel:nonvisual:yes:6,nonvisual,Does it eat?,camel,camel_1.wav,nomask,word,camel,yes,yes,447.830776917,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,55,apple:visual:yes:3,visual,Does it have seeds?,apple,apple_1.wav,nomask,prompt,,yes,yes,413.712806068,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,56,rabbit:nonvisual:yes:2,nonvisual,Is it a pet?,rabbit,rabbit_2.wav,nomask,prompt,,yes,yes,577.278372599,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,57,raccoon:visual:yes:4,visual,Does it have stripes?,raccoon,raccoon_1.wav,nomask,prompt,,yes,yes,284.520319197,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,58,lion:visual:yes:4,visual,Does it have teeth?,lion,table_2.wav,nomask,prompt,,yes,yes,315.375653096,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,59,raccoon:nonvisual:yes:1,nonvisual,Does it eat garbage?,raccoon,raccoon_1.wav,nomask,prompt,,yes,yes,328.945700545,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,60,grasshopper:nonvisual:yes:2,nonvisual,Does it live in grass?,grasshopper,grasshopper_2.wav,nomask,prompt,,yes,yes,186.172603164,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,61,elephant:nonvisual:no:1,nonvisual,Is it a rodent?,elephant,elephant_3.wav,mask,prompt,,no,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,62,deer:visual:yes:4,visual,Does it have hooves?,deer,deer_3.wav,mask,prompt,,yes,yes,11.8959976826,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,63,donkey:nonvisual:yes:1,nonvisual,Is it an animal?,donkey,donkey_3.wav,mask,prompt,,yes,yes,40.4508730862,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,64,rabbit:nonvisual:no:4,nonvisual,Is it used for making jam?,rabbit,rabbit_3.wav,mask,prompt,,no,no,174.284287728,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,65,swan:nonvisual:yes:1,nonvisual,Is it graceful?,swan,swan_2.wav,nomask,prompt,,yes,yes,1094.57262116,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,66,strawberry:nonvisual:yes:3,nonvisual,Is it used for making jam?,strawberry,zebra_4.wav,nomask,word,strawberry,yes,yes,986.707787029,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,67,pig:nonvisual:yes:5,nonvisual,Does it like mud?,pig,pig_2.wav,mask,word,pig,yes,yes,68.9634974115,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,68,bottle:nonvisual:yes:1,nonvisual,Is it used for holding things?,bottle,camel_4.wav,mask,prompt,,yes,no,546.826346777,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,1,test,69,penguin:nonvisual:yes:4,nonvisual,Does it lay eggs?,penguin,penguin_2.wav,mask,prompt,,yes,yes,815.538896946,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,71,apple:visual:yes:1,visual,Is it red?,apple,apple_4.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,72,camel:nonvisual:yes:2,nonvisual,Does it drink water?,camel,camel_1.wav,mask,prompt,,yes,yes,434.227440273,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,73,pig:visual:yes:3,visual,Does it have a snout?,pig,table_2.wav,mask,prompt,,yes,no,41.3295093458,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,74,giraffe:nonvisual:yes:3,nonvisual,Does it live in zoos?,giraffe,donkey_1.wav,nomask,prompt,,yes,yes,309.097805526,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,75,zebra:nonvisual:no:2,nonvisual,Is it used for eating on?,zebra,zebra_1.wav,mask,word,raccoon,no,no,16.7741088662,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,76,pig:nonvisual:yes:4,nonvisual,Is it smelly?,pig,deer_3.wav,mask,word,pig,yes,yes,563.96695436,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,77,elephant:visual:no:5,visual,Does it have hooves?,elephant,elephant_2.wav,mask,prompt,,no,no,217.52471081,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,78,mouse:visual:no:3,visual,Does it have stripes?,mouse,mouse_3.wav,nomask,prompt,,no,no,780.766670126,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,79,penguin:nonvisual:yes:1,nonvisual,Is it a bird?,penguin,swan_1.wav,nomask,word,penguin,yes,yes,275.003521005,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,80,raccoon:nonvisual:yes:3,nonvisual,Is it nocturnal?,raccoon,raccoon_3.wav,mask,prompt,,yes,yes,490.229053656,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,81,donkey:visual:yes:1,visual,Does it have legs?,donkey,donkey_2.wav,mask,word,donkey,yes,no,287.433422171,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,82,swan:nonvisual:yes:4,nonvisual,Does it lay eggs?,swan,swan_2.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,83,strawberry:visual:yes:4,visual,Is it small?,strawberry,giraffe_4.wav,nomask,prompt,,yes,no,129.173601745,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,84,penguin:nonvisual:yes:3,nonvisual,Does it live in the Arctic?,penguin,penguin_1.wav,nomask,prompt,,yes,yes,69.0739271231,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,85,pineapple:visual:yes:3,visual,Does it have skin?,pineapple,pineapple_1.wav,mask,word,pineapple,yes,yes,383.573824773,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,86,lion:visual:yes:2,visual,Does it have fur?,lion,lion_2.wav,mask,prompt,,yes,yes,316.520920722,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,87,raccoon:visual:yes:3,visual,Does it have eyes?,raccoon,raccoon_1.wav,mask,prompt,,yes,yes,233.975852607,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,88,giraffe:visual:yes:3,visual,Does it have long legs?,giraffe,giraffe_2.wav,mask,prompt,,yes,yes,102.303979453,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,89,elephant:visual:yes:4,visual,Does it have a tail?,elephant,grasshopper_1.wav,nomask,prompt,,yes,no,431.518872268,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,90,table:nonvisual:no:3,nonvisual,Is it healthy?,table,table_4.wav,nomask,word,tiger,no,no,543.311162153,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,91,chicken:nonvisual:no:3,nonvisual,Is it used for making jam?,chicken,chicken_4.wav,mask,prompt,,no,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,92,elephant:visual:yes:2,visual,Does it have ears?,elephant,elephant_4.wav,mask,word,elephant,yes,yes,122.963612434,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,93,strawberry:nonvisual:yes:1,nonvisual,Is it a fruit?,strawberry,strawberry_2.wav,mask,prompt,,yes,yes,465.367010795,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,94,dog:nonvisual:yes:3,nonvisual,Is it a pet?,dog,dog_1.wav,mask,prompt,,yes,yes,256.625781069,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,95,raccoon:nonvisual:yes:2,nonvisual,Is it furry?,raccoon,raccoon_1.wav,mask,word,raccoon,yes,yes,152.501472505,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,96,rabbit:visual:yes:4,visual,Does it have a tail?,rabbit,rabbit_2.wav,nomask,prompt,,yes,yes,438.767220592,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,97,tiger:visual:yes:1,visual,Does it have stripes?,tiger,tiger_1.wav,nomask,prompt,,yes,yes,128.302647732,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,98,bottle:visual:yes:2,visual,Is it made of plastic?,bottle,bottle_2.wav,mask,word,bottle,yes,yes,269.503482617,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,99,table:visual:yes:3,visual,Does it have legs?,table,table_2.wav,mask,prompt,,yes,yes,165.479680989,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,100,chair:visual:yes:1,visual,Does it have legs?,chair,chair_2.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,101,pig:visual:yes:4,visual,Does it have legs?,pig,pig_3.wav,nomask,prompt,,yes,yes,255.452665733,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,102,zebra:nonvisual:no:1,nonvisual,Does it eat garbage?,zebra,zebra_4.wav,nomask,prompt,,no,yes,325.690105557,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,103,pineapple:visual:no:5,visual,Does it have a tail?,pineapple,pineapple_2.wav,nomask,word,alligator,no,no,82.202575868,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,104,mouse:visual:yes:3,visual,Does it have fur?,mouse,camel_2.wav,nomask,prompt,,yes,yes,218.117509969,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,105,strawberry:nonvisual:no:4,nonvisual,Does it eat?,strawberry,strawberry_2.wav,mask,prompt,,no,yes,141.047513578,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,106,dog:visual:yes:4,visual,Does it have hair?,dog,chair_3.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,107,chair:visual:yes:2,visual,Is it made of wood?,chair,chair_2.wav,nomask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,108,zebra:nonvisual:yes:2,nonvisual,Does it run fast?,zebra,swan_1.wav,nomask,prompt,,yes,yes,225.218298612,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,109,apple:visual:yes:4,visual,Is it round?,apple,grasshopper_1.wav,mask,word,apple,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,110,donkey:nonvisual:yes:3,nonvisual,Is it a mammal?,donkey,donkey_2.wav,nomask,prompt,,yes,no,335.948863067,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,111,alligator:nonvisual:no:5,nonvisual,Is it a pet?,alligator,alligator_2.wav,mask,prompt,,no,no,9.53440275043,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,112,dog:visual:no:2,visual,Is it pink?,dog,dog_3.wav,mask,prompt,,no,no,164.05497794,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,113,rabbit:nonvisual:yes:5,nonvisual,Does it eat carrots?,rabbit,rabbit_3.wav,mask,prompt,,yes,yes,37.3005862348,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,114,deer:nonvisual:yes:3,nonvisual,Is it a mammal?,deer,deer_1.wav,mask,prompt,,yes,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,115,grasshopper:nonvisual:yes:3,nonvisual,Is it found in summer?,grasshopper,grasshopper_4.wav,mask,prompt,,yes,yes,434.693485731,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,116,alligator:visual:no:4,visual,Is it small?,alligator,alligator_1.wav,nomask,prompt,,no,timeout,1250.0,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,117,chair:nonvisual:yes:4,nonvisual,Is it used for relaxing?,chair,chair_1.wav,nomask,prompt,,yes,yes,212.797680171,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,118,alligator:nonvisual:yes:6,nonvisual,Is it found in summer?,alligator,alligator_3.wav,mask,prompt,,yes,no,186.676738551,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,119,lion:visual:no:5,visual,Does it have a long neck?,lion,lion_2.wav,mask,prompt,,no,no,391.563812271,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,120,deer:nonvisual:no:2,nonvisual,Is it smelly?,deer,deer_3.wav,mask,prompt,,no,yes,83.757233806,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,121,tiger:visual:yes:3,visual,Is it orange?,tiger,tiger_3.wav,nomask,prompt,,yes,yes,95.0537105091,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,122,donkey:visual:no:4,visual,Is it small?,donkey,donkey_4.wav,mask,prompt,,no,no,401.58378589,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,123,deer:visual:yes:5,visual,Does it have a white tail?,deer,deer_2.wav,nomask,prompt,,yes,yes,402.758181561,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,124,swan:visual:yes:2,visual,Does it have a beak?,swan,swan_1.wav,nomask,word,swan,yes,yes,362.709656358,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,125,camel:nonvisual:yes:5,nonvisual,Does it spit?,camel,camel_4.wav,nomask,prompt,,yes,yes,277.241882635,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,126,chicken:visual:yes:4,visual,Does it have legs?,chicken,chicken_4.wav,nomask,word,chicken,yes,yes,280.503559392,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,127,deer:nonvisual:no:4,nonvisual,Does it eat people?,deer,deer_3.wav,nomask,prompt,,no,no,153.373386711,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,128,apple:visual:no:5,visual,Does it have eyes?,apple,apple_1.wav,mask,prompt,,no,no,156.657469692,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,129,camel:visual:yes:5,visual,Is it beige?,camel,camel_3.wav,mask,prompt,,yes,yes,272.359610302,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,130,mouse:nonvisual:yes:3,nonvisual,Does it eat?,mouse,zebra_2.wav,mask,prompt,,yes,yes,220.922744134,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,2,test,131,donkey:visual:yes:4,visual,Does it have hooves?,donkey,raccoon_2.wav,nomask,word,donkey,yes,no,301.127022831,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,133,apple:nonvisual:yes:3,nonvisual,Is it eaten in pies?,apple,apple_2.wav,nomask,word,apple,yes,yes,78.6685061175,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,134,dog:nonvisual:yes:5,nonvisual,Does it chase cats?,dog,raccoon_2.wav,mask,word,dog,yes,no,173.188953195,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,135,alligator:visual:no:3,visual,Is it round?,alligator,alligator_2.wav,mask,prompt,,no,no,156.766938977,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,136,tiger:nonvisual:yes:5,nonvisual,Does it live in India?,tiger,tiger_3.wav,nomask,prompt,,yes,yes,165.860263165,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,137,raccoon:nonvisual:no:2,nonvisual,Is it used for protection?,raccoon,raccoon_3.wav,nomask,word,pineapple,no,no,137.1046938,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,138,swan:nonvisual:no:1,nonvisual,Is it used by riding?,swan,swan_4.wav,mask,prompt,,no,no,512.177353492,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,139,deer:visual:yes:2,visual,Does it have four legs?,deer,deer_4.wav,nomask,word,deer,yes,yes,574.985916261,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,140,mouse:nonvisual:yes:4,nonvisual,Is it used in experiments?,mouse,mouse_1.wav,mask,word,mouse,yes,yes,364.026490366,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,141,pig:nonvisual:yes:2,nonvisual,Does it live on farms?,pig,pig_4.wav,mask,prompt,,yes,yes,166.627829429,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,142,mouse:nonvisual:yes:2,nonvisual,Is it an animal?,mouse,mouse_1.wav,nomask,prompt,,yes,yes,384.516478051,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,143,table:visual:yes:1,visual,Is it made of wood?,table,table_1.wav,nomask,prompt,,yes,yes,392.739168135,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,144,chicken:nonvisual:no:5,nonvisual,Is it comfortable?,chicken,chicken_1.wav,nomask,word,zebra,no,no,318.991024746,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,145,giraffe:visual:no:3,visual,Is it muddy?,giraffe,giraffe_1.wav,mask,prompt,,no,no,376.856499119,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,146,grasshopper:nonvisual:yes:1,nonvisual,Is it an insect?,grasshopper,grasshopper_1.wav,nomask,prompt,,yes,yes,398.723816965,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,147,elephant:nonvisual:yes:5,nonvisual,Does it eat peanuts?,elephant,elephant_1.wav,mask,prompt,,yes,yes,361.329765525,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,148,penguin:nonvisual:yes:5,nonvisual,Does it waddle?,penguin,penguin_1.wav,nomask,prompt,,yes,yes,251.876344206,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,149,deer:nonvisual:yes:5,nonvisual,Is it timid?,deer,deer_1.wav,mask,prompt,,yes,yes,316.420093644,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,150,zebra:visual:no:2,visual,Does it have antennae?,zebra,zebra_3.wav,mask,word,swan,no,no,431.614898145,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,151,pineapple:visual:yes:2,visual,Does it have an inside?,pineapple,pineapple_3.wav,mask,word,pineapple,yes,yes,362.205520971,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,152,strawberry:visual:yes:3,visual,Does it have green leaves?,strawberry,strawberry_1.wav,nomask,word,strawberry,yes,yes,374.416483101,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,153,camel:nonvisual:yes:1,nonvisual,Does it live in the desert?,camel,camel_3.wav,nomask,word,camel,yes,yes,408.638802124,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,154,pig:visual:yes:2,visual,Does it have a tail?,pig,pig_2.wav,mask,prompt,,yes,yes,617.861761246,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,155,dog:visual:no:3,visual,Does it have a caboose?,dog,dog_2.wav,nomask,word,elephant,no,no,485.071507283,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,156,strawberry:nonvisual:no:3,nonvisual,Is it furniture?,strawberry,strawberry_3.wav,mask,word,giraffe,no,no,612.256734632,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,157,chicken:nonvisual:yes:2,nonvisual,Does it live on a farm?,chicken,chicken_3.wav,mask,prompt,,yes,yes,725.76148482,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,158,raccoon:visual:no:4,visual,Does it have a long neck?,raccoon,raccoon_2.wav,mask,prompt,,no,no,513.427609345,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,159,dog:nonvisual:yes:1,nonvisual,Does it bark?,dog,deer_3.wav,nomask,prompt,,yes,no,289.318728959,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,160,elephant:nonvisual:yes:3,nonvisual,Does it live in zoos?,elephant,elephant_3.wav,mask,word,elephant,yes,yes,337.51600422,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,161,bottle:visual:yes:1,visual,Is it made of glass?,bottle,bottle_3.wav,mask,word,bottle,yes,yes,309.243124677,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,162,penguin:visual:yes:1,visual,Is it black?,penguin,penguin_3.wav,mask,prompt,,yes,yes,508.660247782,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,163,donkey:visual:no:1,visual,Is it round?,donkey,donkey_2.wav,mask,prompt,,no,no,497.199247126,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,164,rabbit:visual:no:2,visual,Is it made of metal?,rabbit,rabbit_3.wav,nomask,prompt,,no,no,438.640466426,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,165,lion:nonvisual:yes:3,nonvisual,Is it a mammal?,lion,lion_1.wav,mask,prompt,,yes,yes,365.969092585,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,166,deer:visual:yes:1,visual,Does it have antlers?,deer,deer_4.wav,mask,word,deer,yes,yes,338.875409681,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,167,dog:visual:yes:2,visual,Does it have legs?,dog,table_3.wav,nomask,word,dog,yes,no,598.761267029,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,168,alligator:nonvisual:yes:5,nonvisual,Does it eat people?,alligator,alligator_3.wav,mask,word,alligator,yes,yes,388.682397781,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,169,donkey:nonvisual:yes:5,nonvisual,Does it make noises?,donkey,donkey_4.wav,mask,prompt,,yes,yes,475.56367144,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,170,strawberry:nonvisual:no:1,nonvisual,Is it used for riding?,strawberry,strawberry_1.wav,nomask,prompt,,no,no,635.416880017,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,171,chicken:visual:yes:3,visual,Does it have a beak?,chicken,raccoon_2.wav,mask,prompt,,yes,no,1090.97261354,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,172,tiger:visual:no:3,visual,Does it have large ears?,tiger,tiger_4.wav,mask,prompt,,no,yes,653.518705862,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,173,elephant:nonvisual:yes:2,nonvisual,Does it live in Africa?,elephant,elephant_4.wav,mask,prompt,,yes,yes,579.380697571,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,174,rabbit:nonvisual:yes:6,nonvisual,Does it make noises?,rabbit,rabbit_3.wav,nomask,prompt,,yes,no,761.320162797,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,175,camel:nonvisual:yes:4,nonvisual,Is it a mammal?,camel,camel_3.wav,mask,prompt,,yes,yes,420.211192919,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,176,zebra:nonvisual:yes:4,nonvisual,Does it travel in herds?,zebra,zebra_1.wav,mask,prompt,,yes,yes,531.410683179,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,177,lion:nonvisual:yes:5,nonvisual,Does it roar?,lion,lion_4.wav,mask,prompt,,yes,yes,468.639250146,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,178,apple:nonvisual:no:5,nonvisual,Is it used in experiments?,apple,apple_3.wav,nomask,prompt,,no,no,467.512227129,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,179,camel:visual:yes:4,visual,Is it large?,camel,camel_3.wav,mask,prompt,,yes,yes,218.418070581,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,180,rabbit:nonvisual:yes:1,nonvisual,Does it hop?,rabbit,swan_2.wav,nomask,word,rabbit,yes,yes,585.168813355,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,181,zebra:visual:yes:5,visual,Does it have jaws?,zebra,zebra_3.wav,mask,prompt,,yes,no,514.195495751,0
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,182,tiger:nonvisual:yes:2,nonvisual,Is it an animal?,tiger,tiger_1.wav,nomask,prompt,,yes,yes,480.722818291,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,183,swan:visual:yes:4,visual,Does it have wings?,swan,swan_3.wav,mask,prompt,,yes,yes,437.291303882,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,184,pig:visual:yes:5,visual,Is it muddy?,pig,pig_4.wav,nomask,prompt,,yes,yes,613.505070098,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,185,camel:nonvisual:yes:3,nonvisual,Is it used by riding?,camel,camel_1.wav,nomask,prompt,,yes,yes,497.329522157,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,186,rabbit:visual:yes:3,visual,Does it have whiskers?,rabbit,rabbit_4.wav,nomask,prompt,,yes,yes,423.184151994,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,187,deer:nonvisual:yes:4,nonvisual,Is it an herbivore?,deer,deer_4.wav,nomask,prompt,,yes,yes,353.503341554,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,188,grasshopper:visual:no:3,visual,Does it have an engine?,grasshopper,grasshopper_1.wav,nomask,word,swan,no,no,272.043685196,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,189,bottle:nonvisual:yes:2,nonvisual,Is it used for holding liquids?,bottle,bottle_3.wav,nomask,prompt,,yes,yes,414.982587332,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,190,table:nonvisual:yes:2,nonvisual,Is it found in kitchens?,table,table_4.wav,nomask,word,table,yes,yes,471.188095165,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,191,alligator:nonvisual:yes:4,nonvisual,Does it live in water?,alligator,alligator_3.wav,mask,word,alligator,yes,yes,706.377714407,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,192,penguin:visual:yes:2,visual,Does it have a beak?,penguin,penguin_4.wav,nomask,prompt,,yes,yes,336.627765559,1
+PVW108,108,2015_Dec_01_1508,LL-Jerry,3,test,193,chair:nonvisual:yes:6,nonvisual,Is it used in circuses?,chair,chair_4.wav,mask,prompt,,yes,no,461.172283161,0
