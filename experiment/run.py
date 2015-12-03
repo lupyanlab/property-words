@@ -366,7 +366,9 @@ class Experiment(object):
         trial['rt'] = rt * 1000
         trial['is_correct'] = is_correct
 
-        self.feedback[is_correct].play()
+        if trial['block_type'] == 'practice' or trial['response_type'] == 'word':
+            self.feedback[is_correct].play()
+
         if response == 'timeout':
             self.show_timeout_screen()
 
@@ -468,7 +470,12 @@ def main():
     last_block = trials[-1]['block']
 
     for block in trials.iter_blocks():
+        block_num = block[0]['block']
         block_type = block[0]['block_type']
+
+        print 'block_num', block_num
+        print 'last_block', last_block
+        print 'block_type', block_type
 
         for trial in block:
             trial_data = experiment.run_trial(trial)
@@ -476,7 +483,7 @@ def main():
 
         if block_type == 'practice':
             experiment.show_end_of_practice_screen()
-        elif block['block'] != last_block:
+        elif block_num != last_block:
             experiment.show_break_screen()
 
     experiment.show_end_of_experiment_screen()
