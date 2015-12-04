@@ -32,9 +32,11 @@ read_chunk("subjs.R")
 ```{r, subjs, fig.width = 4, fig.height = 4}
 ```
 
-# Prompt trials
+# Version 2
 
-## Error
+## Prompt trials
+
+### Error
 
 ```{r, prompt-mod, echo = 1}
 ```
@@ -42,7 +44,7 @@ read_chunk("subjs.R")
 ```{r, prompt-plot}
 ```
 
-## RT
+### RT
 
 ```{r, prompt-rt-mod, echo = 1}
 ```
@@ -50,9 +52,9 @@ read_chunk("subjs.R")
 ```{r, prompt-rt-plot}
 ```
 
-# Word trials
+## Word trials
 
-## Error
+### Error
 
 ```{r, word-mod, echo = 1}
 ```
@@ -60,7 +62,7 @@ read_chunk("subjs.R")
 ```{r, word-plot}
 ```
 
-## RT
+### RT
 
 ```{r, word-rt-mod, echo = 1}
 ```
