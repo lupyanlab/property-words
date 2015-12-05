@@ -1,0 +1,9 @@
+subj_id,seed,date,computer,block,block_type,trial,proposition_id,feat_type,question,cue,cue_file,mask_type,response_type,word,word_file,correct_response,response,rt,is_correct
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,0,,,----------,lion,lion_3.wav,mask,word,lion,lion_2.wav,yes,timeout,1250.0,0
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,1,tiger:visual:no:4,visual,Is it yellow inside?,tiger,tiger_1.wav,mask,prompt,,,no,no,180.350558367,1
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,2,,,----------,donkey,donkey_4.wav,nomask,word,swan,swan_1.wav,no,timeout,1250.0,0
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,3,pineapple:visual:no:2,visual,Does it have a seat?,pineapple,pineapple_1.wav,nomask,prompt,,,no,no,94.0332761966,1
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,4,tiger:visual:yes:2,visual,Does it have teeth?,tiger,tiger_4.wav,nomask,prompt,,,yes,yes,204.900517361,1
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,5,,,----------,rabbit,rabbit_1.wav,mask,word,rabbit,rabbit_4.wav,yes,timeout,1250.0,0
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,6,pig:nonvisual:yes:3,nonvisual,Is it eaten as bacon?,pig,pig_3.wav,nomask,prompt,,,yes,timeout,1250.0,0
+PVW216,216,2015_Dec_04_0900,LL-Jerry,0,practice,7,rabbit:nonvisual:yes:2,nonvisual,Is it a pet?,rabbit,rabbit_2.wav,nomask,prompt,,,yes,no,190.741511295,0
