@@ -66,11 +66,17 @@ subjs_parallel <- subjs %>%
   gather(rank_type, rank_value, -(subj_id:version)) %>%
   mutate(rank_type = factor(rank_type, levels = c("rank_error", "rank_rt")))
 
+# subjs_parallel <- subjs_parallel %>%
+#   filter(rank_type == "rank_error") %>%
+#   mutate(label_side = ifelse(rank_value %% 2, "rank_error", "rank_rt")) %>%
+#   select(subj_id, label_side) %>%
+#   left_join(subjs_parallel, .)
+
 ggplot(subjs_parallel, aes(x = rank_type, y = rank_value, color = subj_id)) +
   geom_line(aes(group = subj_id, lty = version)) +
   geom_text(aes(label = subj_id),
             data = filter(subjs_parallel, rank_type == "rank_error"),
-            hjust = 1) +
+            size = 3, hjust = 1) +
   scale_x_discrete("", labels = c("Error", "RT")) +
   scale_y_continuous("Rank", breaks = rank_axis_breaks) +
   scale_lty_version +
@@ -92,7 +98,7 @@ ggplot(subjs_parallel_z, aes(x = measure, y = z_score, color = subj_id)) +
   geom_line(aes(group = subj_id, lty = version)) +
   geom_text(aes(label = subj_id),
             data = filter(subjs_parallel_z, measure == "error_z"),
-            hjust = 1) +
+            size = 3, hjust = 1) +
   scale_x_discrete("", labels = c("Error", "RT")) +
   scale_y_continuous("z-score") +
   scale_lty_version +
