@@ -367,10 +367,6 @@ class Experiment(object):
             self.win.flip()
             core.wait(self.waits['mask_refresh'])
 
-        # Cue offset to response onset
-        self.win.flip()
-        core.wait(self.waits['cue_offset_to_response_onset'])
-
         # Show the response prompt
         self.timer.reset()
         self.prompt.draw()
