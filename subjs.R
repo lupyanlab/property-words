@@ -8,8 +8,7 @@ library(ggplot2)
 library(scales)
 
 devtools::load_all("propertywords")
-propertywords <- compile("experiment/data/") %>%
-  clean %>% recode %>% mutate(version = factor(version))
+data(propertywords)
 
 # ---- subjs
 subjs <- propertywords %>%

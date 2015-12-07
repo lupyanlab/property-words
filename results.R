@@ -9,8 +9,7 @@ library(ggplot2)
 library(scales)
 
 devtools::load_all("propertywords")
-propertywords <- compile("experiment/data/") %>%
-  clean %>% recode %>% mutate(version = factor(version))
+data(propertywords)
 
 plot_prompt_trials <- function(frame, mod) {
   ggplot(frame, aes(x = mask_c, y = is_error)) +
