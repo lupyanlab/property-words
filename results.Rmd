@@ -1,0 +1,89 @@
+---
+title: "Property verification with word repetition detection"
+author: "Pierce Edmiston"
+date: "December 3, 2015"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+---
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(devtools)
+library(dplyr)
+
+opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.path = 'results-figs/'
+)
+
+read_chunk("results.R")
+read_chunk("subjs.R")
+```
+
+```{r, setup}
+```
+
+# Subjects
+
+```{r, subjs, fig.width = 4, fig.height = 4}
+```
+
+# Overall
+
+```{r, overall-data}
+```
+
+## Prompt trials
+
+### Error
+
+```{r, prompt-mod, echo = 1}
+```
+
+```{r, prompt-plot}
+```
+
+# Version 2
+
+```{r, version2-data}
+```
+
+## Prompt trials
+
+### Error
+
+```{r, prompt2-mod, echo = 1}
+```
+
+```{r, prompt2-plot}
+```
+
+### RT
+
+```{r, prompt2-rt-mod, echo = 1}
+```
+
+```{r, prompt2-rt-plot}
+```
+
+## Word trials
+
+### Error
+
+```{r, word2-mod, echo = 1}
+```
+
+```{r, word2-plot}
+```
+
+### RT
+
+```{r, word2-rt-mod, echo = 1}
+```
+
+```{r, word2-rt-plot}
+```
