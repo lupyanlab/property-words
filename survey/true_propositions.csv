@@ -1,0 +1,220 @@
+row,question,question_slug,cue,correct_response,feat_type,proposition_id
+1,Is it long?,is-it-long,alligator,yes,visual,alligator:visual:yes:2
+2,Does it have scales?,does-it-have-scales,alligator,yes,visual,alligator:visual:yes:3
+3,Does it have a tail?,does-it-have-a-tail,alligator,yes,visual,alligator:visual:yes:4
+4,Does it have jaws?,does-it-have-jaws,alligator,yes,visual,alligator:visual:yes:5
+5,Does it have a long tongue?,does-it-have-a-long-tongue,alligator,yes,visual,alligator:visual:yes:1
+6,Is it an animal?,is-it-an-animal,alligator,yes,nonvisual,alligator:nonvisual:yes:1
+7,Is it a reptile?,is-it-a-reptile,alligator,yes,nonvisual,alligator:nonvisual:yes:2
+8,Does it live in swamps?,does-it-live-in-swamps,alligator,yes,nonvisual,alligator:nonvisual:yes:3
+9,Does it live in water?,does-it-live-in-water,alligator,yes,nonvisual,alligator:nonvisual:yes:4
+10,Does it eat people?,does-it-eat-people,alligator,yes,nonvisual,alligator:nonvisual:yes:5
+11,Is it found in summer?,is-it-found-in-summer,alligator,yes,nonvisual,alligator:nonvisual:yes:6
+12,Is it round?,is-it-round,apple,yes,visual,apple:visual:yes:4
+13,Is it red?,is-it-red,apple,yes,visual,apple:visual:yes:1
+14,Does it have seeds?,does-it-have-seeds,apple,yes,visual,apple:visual:yes:3
+15,Does it have a core?,does-it-have-a-core,apple,yes,visual,apple:visual:yes:5
+16,Is it a fruit?,is-it-a-fruit,apple,yes,nonvisual,apple:nonvisual:yes:1
+17,Does it grow on trees?,does-it-grow-on-trees,apple,yes,nonvisual,apple:nonvisual:yes:2
+18,Is it eaten in pies?,is-it-eaten-in-pies,apple,yes,nonvisual,apple:nonvisual:yes:3
+19,Is it nutritious?,is-it-nutritious,apple,yes,nonvisual,apple:nonvisual:yes:4
+20,Is it used for cider?,is-it-used-for-cider,apple,yes,nonvisual,apple:nonvisual:yes:5
+21,Is it made of plastic?,is-it-made-of-plastic,bottle,yes,visual,bottle:visual:yes:2
+22,Is it made of glass?,is-it-made-of-glass,bottle,yes,visual,bottle:visual:yes:1
+23,Does it have a neck?,does-it-have-a-neck,bottle,yes,visual,bottle:visual:yes:4
+24,Is it a container?,is-it-a-container,bottle,yes,nonvisual,bottle:nonvisual:yes:3
+25,Is it used for holding things?,is-it-used-for-holding-things,bottle,yes,nonvisual,bottle:nonvisual:yes:1
+26,Is it used for holding liquids?,is-it-used-for-holding-liquids,bottle,yes,nonvisual,bottle:nonvisual:yes:2
+27,Is it breakable?,is-it-breakable,bottle,yes,nonvisual,bottle:nonvisual:yes:4
+28,Is it used for holding beer?,is-it-used-for-holding-beer,bottle,yes,nonvisual,bottle:nonvisual:yes:5
+29,Does it have legs?,does-it-have-legs,camel,yes,visual,camel:visual:yes:3
+30,Does it have a hump?,does-it-have-a-hump,camel,yes,visual,camel:visual:yes:1
+31,Is it brown?,is-it-brown,camel,yes,visual,camel:visual:yes:2
+32,Is it large?,is-it-large,camel,yes,visual,camel:visual:yes:4
+33,Is it beige?,is-it-beige,camel,yes,visual,camel:visual:yes:5
+34,Is it a mammal?,is-it-a-mammal,camel,yes,nonvisual,camel:nonvisual:yes:4
+35,Does it live in the desert?,does-it-live-in-the-desert,camel,yes,nonvisual,camel:nonvisual:yes:1
+36,Does it drink water?,does-it-drink-water,camel,yes,nonvisual,camel:nonvisual:yes:2
+37,Is it used by riding?,is-it-used-by-riding,camel,yes,nonvisual,camel:nonvisual:yes:3
+38,Does it spit?,does-it-spit,camel,yes,nonvisual,camel:nonvisual:yes:5
+39,Does it eat?,does-it-eat,camel,yes,nonvisual,camel:nonvisual:yes:6
+40,Does it have a seat?,does-it-have-a-seat,chair,yes,visual,chair:visual:yes:4
+41,Does it have legs?,does-it-have-legs,chair,yes,visual,chair:visual:yes:1
+42,Does it have armrests?,does-it-have-armrests,chair,yes,visual,chair:visual:yes:3
+43,Is it made of wood?,is-it-made-of-wood,chair,yes,visual,chair:visual:yes:2
+44,Is it found at tables?,is-it-found-at-tables,chair,yes,nonvisual,chair:nonvisual:yes:5
+45,Is it used for sitting on?,is-it-used-for-sitting-on,chair,yes,nonvisual,chair:nonvisual:yes:1
+46,Is it furniture?,is-it-furniture,chair,yes,nonvisual,chair:nonvisual:yes:2
+47,Is it comfortable?,is-it-comfortable,chair,yes,nonvisual,chair:nonvisual:yes:3
+48,Is it used for relaxing?,is-it-used-for-relaxing,chair,yes,nonvisual,chair:nonvisual:yes:4
+49,Is it used in circuses?,is-it-used-in-circuses,chair,yes,nonvisual,chair:nonvisual:yes:6
+50,Does it have a beak?,does-it-have-a-beak,chicken,yes,visual,chicken:visual:yes:3
+51,Does it have feathers?,does-it-have-feathers,chicken,yes,visual,chicken:visual:yes:1
+52,Does it have legs?,does-it-have-legs,chicken,yes,visual,chicken:visual:yes:4
+53,Does it have wings?,does-it-have-wings,chicken,yes,visual,chicken:visual:yes:2
+54,Does it live on a farm?,does-it-live-on-a-farm,chicken,yes,nonvisual,chicken:nonvisual:yes:2
+55,Does it live in a coop?,does-it-live-in-a-coop,chicken,yes,nonvisual,chicken:nonvisual:yes:5
+56,Does it lay eggs?,does-it-lay-eggs,chicken,yes,nonvisual,chicken:nonvisual:yes:1
+57,Does it eat grain?,does-it-eat-grain,chicken,yes,nonvisual,chicken:nonvisual:yes:3
+58,Is it eaten by frying?,is-it-eaten-by-frying,chicken,yes,nonvisual,chicken:nonvisual:yes:4
+59,Does it have eyes?,does-it-have-eyes,deer,yes,visual,deer:visual:yes:3
+60,Does it have hooves?,does-it-have-hooves,deer,yes,visual,deer:visual:yes:4
+61,Does it have four legs?,does-it-have-four-legs,deer,yes,visual,deer:visual:yes:2
+62,Does it have antlers?,does-it-have-antlers,deer,yes,visual,deer:visual:yes:1
+63,Does it have a white tail?,does-it-have-a-white-tail,deer,yes,visual,deer:visual:yes:5
+64,Is it a mammal?,is-it-a-mammal,deer,yes,nonvisual,deer:nonvisual:yes:3
+65,Is it fast?,is-it-fast,deer,yes,nonvisual,deer:nonvisual:yes:2
+66,Is it timid?,is-it-timid,deer,yes,nonvisual,deer:nonvisual:yes:5
+67,Is it hunted by people?,is-it-hunted-by-people,deer,yes,nonvisual,deer:nonvisual:yes:1
+68,Is it an herbivore?,is-it-an-herbivore,deer,yes,nonvisual,deer:nonvisual:yes:4
+69,Does it have a tail?,does-it-have-a-tail,dog,yes,visual,dog:visual:yes:3
+70,Does it have legs?,does-it-have-legs,dog,yes,visual,dog:visual:yes:2
+71,Does it have a top?,does-it-have-a-top,dog,yes,visual,dog:visual:yes:6
+72,Does it have four legs?,does-it-have-four-legs,dog,yes,visual,dog:visual:yes:1
+73,Does it have hair?,does-it-have-hair,dog,yes,visual,dog:visual:yes:4
+74,Does it have a nose?,does-it-have-a-nose,dog,yes,visual,dog:visual:yes:5
+75,Is it an animal?,is-it-an-animal,dog,yes,nonvisual,dog:nonvisual:yes:2
+76,Is it a pet?,is-it-a-pet,dog,yes,nonvisual,dog:nonvisual:yes:3
+77,Does it bark?,does-it-bark,dog,yes,nonvisual,dog:nonvisual:yes:1
+78,Is it used for protection?,is-it-used-for-protection,dog,yes,nonvisual,dog:nonvisual:yes:4
+79,Does it chase cats?,does-it-chase-cats,dog,yes,nonvisual,dog:nonvisual:yes:5
+80,Does it have a tail?,does-it-have-a-tail,donkey,yes,visual,donkey:visual:yes:3
+81,Does it have hooves?,does-it-have-hooves,donkey,yes,visual,donkey:visual:yes:4
+82,Does it have legs?,does-it-have-legs,donkey,yes,visual,donkey:visual:yes:1
+83,Does it have four legs?,does-it-have-four-legs,donkey,yes,visual,donkey:visual:yes:2
+84,Is it an animal?,is-it-an-animal,donkey,yes,nonvisual,donkey:nonvisual:yes:1
+85,Is it a mammal?,is-it-a-mammal,donkey,yes,nonvisual,donkey:nonvisual:yes:3
+86,Is it like a horse?,is-it-like-a-horse,donkey,yes,nonvisual,donkey:nonvisual:yes:2
+87,Is it furry?,is-it-furry,donkey,yes,nonvisual,donkey:nonvisual:yes:4
+88,Does it make noises?,does-it-make-noises,donkey,yes,nonvisual,donkey:nonvisual:yes:5
+89,Does it have a tail?,does-it-have-a-tail,elephant,yes,visual,elephant:visual:yes:4
+90,Is it grey?,is-it-grey,elephant,yes,visual,elephant:visual:yes:1
+91,Does it have four legs?,does-it-have-four-legs,elephant,yes,visual,elephant:visual:yes:3
+92,Does it have ears?,does-it-have-ears,elephant,yes,visual,elephant:visual:yes:2
+93,Does it have large ears?,does-it-have-large-ears,elephant,yes,visual,elephant:visual:yes:5
+94,Is it an animal?,is-it-an-animal,elephant,yes,nonvisual,elephant:nonvisual:yes:1
+95,Does it live in Africa?,does-it-live-in-africa,elephant,yes,nonvisual,elephant:nonvisual:yes:2
+96,Is it used in circuses?,is-it-used-in-circuses,elephant,yes,nonvisual,elephant:nonvisual:yes:4
+97,Does it live in zoos?,does-it-live-in-zoos,elephant,yes,nonvisual,elephant:nonvisual:yes:3
+98,Does it eat peanuts?,does-it-eat-peanuts,elephant,yes,nonvisual,elephant:nonvisual:yes:5
+99,Is it brown?,is-it-brown,giraffe,yes,visual,giraffe:visual:yes:4
+100,Does it have spots?,does-it-have-spots,giraffe,yes,visual,giraffe:visual:yes:1
+101,Is it tall?,is-it-tall,giraffe,yes,visual,giraffe:visual:yes:2
+102,Does it have long legs?,does-it-have-long-legs,giraffe,yes,visual,giraffe:visual:yes:3
+103,Is it a mammal?,is-it-a-mammal,giraffe,yes,nonvisual,giraffe:nonvisual:yes:4
+104,Does it live in Africa?,does-it-live-in-africa,giraffe,yes,nonvisual,giraffe:nonvisual:yes:2
+105,Does it live in zoos?,does-it-live-in-zoos,giraffe,yes,nonvisual,giraffe:nonvisual:yes:3
+106,Does it eat leaves?,does-it-eat-leaves,giraffe,yes,nonvisual,giraffe:nonvisual:yes:1
+107,Does it live in grass?,does-it-live-in-grass,giraffe,yes,nonvisual,giraffe:nonvisual:yes:5
+108,Does it have legs?,does-it-have-legs,grasshopper,yes,visual,grasshopper:visual:yes:2
+109,Is it green?,is-it-green,grasshopper,yes,visual,grasshopper:visual:yes:1
+110,Does it have antennae?,does-it-have-antennae,grasshopper,yes,visual,grasshopper:visual:yes:4
+111,Is it found in summer?,is-it-found-in-summer,grasshopper,yes,nonvisual,grasshopper:nonvisual:yes:3
+112,Does it live in grass?,does-it-live-in-grass,grasshopper,yes,nonvisual,grasshopper:nonvisual:yes:2
+113,Is it an insect?,is-it-an-insect,grasshopper,yes,nonvisual,grasshopper:nonvisual:yes:1
+114,Does it have a tail?,does-it-have-a-tail,lion,yes,visual,lion:visual:yes:3
+115,Does it have teeth?,does-it-have-teeth,lion,yes,visual,lion:visual:yes:4
+116,Does it have fur?,does-it-have-fur,lion,yes,visual,lion:visual:yes:2
+117,Does it have a mane?,does-it-have-a-mane,lion,yes,visual,lion:visual:yes:1
+118,Is it an animal?,is-it-an-animal,lion,yes,nonvisual,lion:nonvisual:yes:1
+119,Is it a mammal?,is-it-a-mammal,lion,yes,nonvisual,lion:nonvisual:yes:3
+120,Is it a carnivore?,is-it-a-carnivore,lion,yes,nonvisual,lion:nonvisual:yes:2
+121,Does it live in jungles?,does-it-live-in-jungles,lion,yes,nonvisual,lion:nonvisual:yes:4
+122,Does it roar?,does-it-roar,lion,yes,nonvisual,lion:nonvisual:yes:5
+123,Does it have a tail?,does-it-have-a-tail,mouse,yes,visual,mouse:visual:yes:1
+124,Is it grey?,is-it-grey,mouse,yes,visual,mouse:visual:yes:2
+125,Does it have whiskers?,does-it-have-whiskers,mouse,yes,visual,mouse:visual:yes:4
+126,Does it have a white tail?,does-it-have-a-white-tail,mouse,yes,visual,mouse:visual:yes:5
+127,Does it have fur?,does-it-have-fur,mouse,yes,visual,mouse:visual:yes:3
+128,Is it an animal?,is-it-an-animal,mouse,yes,nonvisual,mouse:nonvisual:yes:2
+129,Is it used in experiments?,is-it-used-in-experiments,mouse,yes,nonvisual,mouse:nonvisual:yes:4
+130,Does it eat?,does-it-eat,mouse,yes,nonvisual,mouse:nonvisual:yes:3
+131,Is it a rodent?,is-it-a-rodent,mouse,yes,nonvisual,mouse:nonvisual:yes:1
+132,Does it eat cheese?,does-it-eat-cheese,mouse,yes,nonvisual,mouse:nonvisual:yes:5
+133,Is it black?,is-it-black,penguin,yes,visual,penguin:visual:yes:1
+134,Does it have a beak?,does-it-have-a-beak,penguin,yes,visual,penguin:visual:yes:2
+135,Does it have feet?,does-it-have-feet,penguin,yes,visual,penguin:visual:yes:3
+136,Does it have wings?,does-it-have-wings,penguin,yes,visual,penguin:visual:yes:4
+137,Is it a bird?,is-it-a-bird,penguin,yes,nonvisual,penguin:nonvisual:yes:1
+138,Does it lay eggs?,does-it-lay-eggs,penguin,yes,nonvisual,penguin:nonvisual:yes:4
+139,Does it waddle?,does-it-waddle,penguin,yes,nonvisual,penguin:nonvisual:yes:5
+140,Is it unable to fly?,is-it-unable-to-fly,penguin,yes,nonvisual,penguin:nonvisual:yes:2
+141,Does it live in the Arctic?,does-it-live-in-the-arctic,penguin,yes,nonvisual,penguin:nonvisual:yes:3
+142,Does it have a tail?,does-it-have-a-tail,pig,yes,visual,pig:visual:yes:2
+143,Does it have legs?,does-it-have-legs,pig,yes,visual,pig:visual:yes:4
+144,Does it have a snout?,does-it-have-a-snout,pig,yes,visual,pig:visual:yes:3
+145,Is it pink?,is-it-pink,pig,yes,visual,pig:visual:yes:1
+146,Is it muddy?,is-it-muddy,pig,yes,visual,pig:visual:yes:5
+147,Is it an animal?,is-it-an-animal,pig,yes,nonvisual,pig:nonvisual:yes:1
+148,Is it smelly?,is-it-smelly,pig,yes,nonvisual,pig:nonvisual:yes:4
+149,Is it eaten as bacon?,is-it-eaten-as-bacon,pig,yes,nonvisual,pig:nonvisual:yes:3
+150,Does it live on farms?,does-it-live-on-farms,pig,yes,nonvisual,pig:nonvisual:yes:2
+151,Does it like mud?,does-it-like-mud,pig,yes,nonvisual,pig:nonvisual:yes:5
+152,Does it have a core?,does-it-have-a-core,pineapple,yes,visual,pineapple:visual:yes:5
+153,Is it yellow inside?,is-it-yellow-inside,pineapple,yes,visual,pineapple:visual:yes:4
+154,Does it have an inside?,does-it-have-an-inside,pineapple,yes,visual,pineapple:visual:yes:2
+155,Does it have skin?,does-it-have-skin,pineapple,yes,visual,pineapple:visual:yes:3
+156,Does it grow on trees?,does-it-grow-on-trees,pineapple,yes,nonvisual,pineapple:nonvisual:yes:3
+157,Is it juicy?,is-it-juicy,pineapple,yes,nonvisual,pineapple:nonvisual:yes:1
+158,Is it prickly?,is-it-prickly,pineapple,yes,nonvisual,pineapple:nonvisual:yes:5
+159,Is it tropical?,is-it-tropical,pineapple,yes,nonvisual,pineapple:nonvisual:yes:2
+160,Does it grow in Hawaii?,does-it-grow-in-hawaii,pineapple,yes,nonvisual,pineapple:nonvisual:yes:4
+161,Does it have a tail?,does-it-have-a-tail,rabbit,yes,visual,rabbit:visual:yes:4
+162,Does it have feet?,does-it-have-feet,rabbit,yes,visual,rabbit:visual:yes:2
+163,Does it have whiskers?,does-it-have-whiskers,rabbit,yes,visual,rabbit:visual:yes:3
+164,Does it have ears?,does-it-have-ears,rabbit,yes,visual,rabbit:visual:yes:1
+165,Is it a pet?,is-it-a-pet,rabbit,yes,nonvisual,rabbit:nonvisual:yes:2
+166,Is it hunted by people?,is-it-hunted-by-people,rabbit,yes,nonvisual,rabbit:nonvisual:yes:4
+167,Does it hop?,does-it-hop,rabbit,yes,nonvisual,rabbit:nonvisual:yes:1
+168,Does it make noises?,does-it-make-noises,rabbit,yes,nonvisual,rabbit:nonvisual:yes:6
+169,Is it edible?,is-it-edible,rabbit,yes,nonvisual,rabbit:nonvisual:yes:3
+170,Does it eat carrots?,does-it-eat-carrots,rabbit,yes,nonvisual,rabbit:nonvisual:yes:5
+171,Does it have a tail?,does-it-have-a-tail,raccoon,yes,visual,raccoon:visual:yes:2
+172,Does it have eyes?,does-it-have-eyes,raccoon,yes,visual,raccoon:visual:yes:3
+173,Does it have stripes?,does-it-have-stripes,raccoon,yes,visual,raccoon:visual:yes:4
+174,Does it have a mask?,does-it-have-a-mask,raccoon,yes,visual,raccoon:visual:yes:5
+175,Is it nocturnal?,is-it-nocturnal,raccoon,yes,nonvisual,raccoon:nonvisual:yes:3
+176,Is it furry?,is-it-furry,raccoon,yes,nonvisual,raccoon:nonvisual:yes:2
+177,Does it eat garbage?,does-it-eat-garbage,raccoon,yes,nonvisual,raccoon:nonvisual:yes:1
+178,Does it produce offspring?,does-it-produce-offspring,raccoon,yes,nonvisual,raccoon:nonvisual:yes:4
+179,Is it small?,is-it-small,strawberry,yes,visual,strawberry:visual:yes:4
+180,Is it red?,is-it-red,strawberry,yes,visual,strawberry:visual:yes:1
+181,Does it have seeds?,does-it-have-seeds,strawberry,yes,visual,strawberry:visual:yes:2
+182,Does it have green leaves?,does-it-have-green-leaves,strawberry,yes,visual,strawberry:visual:yes:3
+183,Is it a fruit?,is-it-a-fruit,strawberry,yes,nonvisual,strawberry:nonvisual:yes:1
+184,Does it taste good?,does-it-taste-good,strawberry,yes,nonvisual,strawberry:nonvisual:yes:4
+185,Is it used for making jam?,is-it-used-for-making-jam,strawberry,yes,nonvisual,strawberry:nonvisual:yes:3
+186,Does it taste sweet?,does-it-taste-sweet,strawberry,yes,nonvisual,strawberry:nonvisual:yes:2
+187,Does it have a beak?,does-it-have-a-beak,swan,yes,visual,swan:visual:yes:2
+188,Does it have feathers?,does-it-have-feathers,swan,yes,visual,swan:visual:yes:3
+189,Does it have wings?,does-it-have-wings,swan,yes,visual,swan:visual:yes:4
+190,Does it have a long neck?,does-it-have-a-long-neck,swan,yes,visual,swan:visual:yes:1
+191,Is it a bird?,is-it-a-bird,swan,yes,nonvisual,swan:nonvisual:yes:2
+192,Is it graceful?,is-it-graceful,swan,yes,nonvisual,swan:nonvisual:yes:1
+193,Does it lay eggs?,does-it-lay-eggs,swan,yes,nonvisual,swan:nonvisual:yes:4
+194,Does it live on water?,does-it-live-on-water,swan,yes,nonvisual,swan:nonvisual:yes:3
+195,Does it have legs?,does-it-have-legs,table,yes,visual,table:visual:yes:3
+196,Is it made of wood?,is-it-made-of-wood,table,yes,visual,table:visual:yes:1
+197,Is it flat?,is-it-flat,table,yes,visual,table:visual:yes:4
+198,Is it furniture?,is-it-furniture,table,yes,nonvisual,table:nonvisual:yes:4
+199,Is it found in kitchens?,is-it-found-in-kitchens,table,yes,nonvisual,table:nonvisual:yes:2
+200,Is it found in dining rooms?,is-it-found-in-dining-rooms,table,yes,nonvisual,table:nonvisual:yes:3
+201,Is it used for eating on?,is-it-used-for-eating-on,table,yes,nonvisual,table:nonvisual:yes:1
+202,Does it have teeth?,does-it-have-teeth,tiger,yes,visual,tiger:visual:yes:2
+203,Does it have stripes?,does-it-have-stripes,tiger,yes,visual,tiger:visual:yes:1
+204,Does it have whiskers?,does-it-have-whiskers,tiger,yes,visual,tiger:visual:yes:4
+205,Is it orange?,is-it-orange,tiger,yes,visual,tiger:visual:yes:3
+206,Does it have large teeth?,does-it-have-large-teeth,tiger,yes,visual,tiger:visual:yes:5
+207,Is it an animal?,is-it-an-animal,tiger,yes,nonvisual,tiger:nonvisual:yes:2
+208,Is it a carnivore?,is-it-a-carnivore,tiger,yes,nonvisual,tiger:nonvisual:yes:1
+209,Does it live in zoos?,does-it-live-in-zoos,tiger,yes,nonvisual,tiger:nonvisual:yes:4
+210,Does it live in India?,does-it-live-in-india,tiger,yes,nonvisual,tiger:nonvisual:yes:5
+211,Does it have jaws?,does-it-have-jaws,zebra,yes,visual,zebra:visual:yes:5
+212,Does it have hooves?,does-it-have-hooves,zebra,yes,visual,zebra:visual:yes:3
+213,Does it have stripes?,does-it-have-stripes,zebra,yes,visual,zebra:visual:yes:1
+214,Does it have four legs?,does-it-have-four-legs,zebra,yes,visual,zebra:visual:yes:2
+215,Does it have a mane?,does-it-have-a-mane,zebra,yes,visual,zebra:visual:yes:4
+216,Is it an animal?,is-it-an-animal,zebra,yes,nonvisual,zebra:nonvisual:yes:1
+217,Does it live in Africa?,does-it-live-in-africa,zebra,yes,nonvisual,zebra:nonvisual:yes:3
+218,Does it travel in herds?,does-it-travel-in-herds,zebra,yes,nonvisual,zebra:nonvisual:yes:4
+219,Does it run fast?,does-it-run-fast,zebra,yes,nonvisual,zebra:nonvisual:yes:2
