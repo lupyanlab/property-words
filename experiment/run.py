@@ -117,6 +117,8 @@ class Trials(UserList):
 
         Each trial is a dict with values for all keys in self.COLUMNS.
         """
+        stim_dir = unipath.Path(cls.STIM_DIR)
+
         # default settings
         settings = dict(ratio_prompt_trials=0.75,
                         ratio_yes_correct_responses=0.75)
@@ -126,7 +128,9 @@ class Trials(UserList):
         try:
             seed = int(seed)
         except ValueError:
-            seed = None
+            seed = random.randint(100)
+            print 'no seed given, using', seed
+
         prng = random.RandomState(seed)
 
         # Balance within subject variables
@@ -143,14 +147,14 @@ class Trials(UserList):
         trials = extend(trials, reps=4)
 
         # Read proposition info
-        propositions_csv = unipath.Path(cls.STIM_DIR, 'propositions.csv')
+        propositions_csv = unipath.Path(stim_dir, 'propositions.csv')
         propositions = pandas.read_csv(propositions_csv)
 
         # Add cue
         categories = propositions.cue.unique()
         trials['cue'] = prng.choice(categories, len(trials), replace=True)
 
-        cue_info_csv = unipath.Path(cls.STIM_DIR, 'cues', '_cue_info.csv')
+        cue_info_csv = unipath.Path(stim_dir, 'cues', '_cue_info.csv')
         cues = pandas.read_csv(cue_info_csv)
 
         def determine_cue_file(row):
@@ -230,9 +234,24 @@ class Trials(UserList):
         practice_trials['block_type'] = 'practice'
         trials.drop(practice_ix, inplace=True)
 
+        # Separate response type by block
+        # HARDCODED!!!
+        prompt_blocks = [1, 3, 5]
+        word_blocks = [2, 4]
+
+        def assign_block(row):
+            response_type = row['response_type']
+            if response_type == 'prompt':
+                return prng.choice(prompt_blocks)
+            elif response_type == 'word':
+                return prng.choice(word_blocks)
+            else:
+                raise NotImplementedError('response type %s' % response_type)
+
+        trials['block'] = trials.apply(assign_block, axis=1)
+        trials.sort_values(by='block', inplace=True)
+
         # Finishing touches
-        trials = add_block(trials, 50, name='block', start=1, groupby='cue',
-                           seed=seed)
         trials = smart_shuffle(trials, col='cue', block='block', seed=seed)
         trials['block_type'] = 'test'
 
