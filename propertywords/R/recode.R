@@ -62,8 +62,7 @@ recode_correct_response <- function(frame) {
 }
 
 recode_version <- function(frame) {
-  subj_id_nums <- as.numeric(stringr::str_extract(frame$subj_id, "[[:digit:]]{3}"))
-  try(frame$version <- ifelse(subj_id_nums < 200, 1, 2), silent = TRUE)
+  try(frame$version <- as.numeric(stringr::str_extract(frame$subj_id, "[[:digit:]]{1}")))
   frame
 }
 

@@ -19,8 +19,7 @@ make_audio <- function(overwrite = FALSE) {
 make_propertywords <- function(overwrite = FALSE) {
   printed <- make("data-raw/printed-word")
   audio <- make("data-raw/audio-word")
-  propertywords <- plyr::rbind.fill(printed, audio) %>%
-    mutate(version = factor(version))
+  propertywords <- plyr::rbind.fill(printed, audio)
   use_data(propertywords, overwrite = overwrite)
 }
 
