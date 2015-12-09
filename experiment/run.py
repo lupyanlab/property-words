@@ -249,7 +249,7 @@ class Trials(UserList):
                 raise NotImplementedError('response type %s' % response_type)
 
         trials['block'] = trials.apply(assign_block, axis=1)
-        trials.sort_values(by='block', inplace=True)
+        trials.sort('block', inplace=True)
 
         # Finishing touches
         trials = smart_shuffle(trials, col='cue', block='block', seed=seed)
