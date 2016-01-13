@@ -8,8 +8,9 @@ library(ggplot2)
 library(scales)
 
 devtools::load_all("propertywords")
-propertywords <- compile("experiment/data/") %>%
-  clean %>% recode %>% mutate(version = factor(version))
+data(propertywords)
+
+propertywords$version <- factor(propertywords$version)
 
 # ---- subjs
 subjs <- propertywords %>%
@@ -32,8 +33,8 @@ subj_rt_ylim <- c(min(subjs$rt) - 100, max(subjs$rt) + 200) %>%
   round(digits = -1)
 subj_error_ylim <- c(0, max(subjs$error) + 0.2) %>%
   round(digits = 1)
-scale_shape_version <- scale_shape_manual(values = c(1, 16))
-scale_lty_version <- scale_linetype_manual(values = c(2, 1))
+scale_shape_version <- scale_shape_discrete()
+scale_lty_version <- scale_shape_discrete()
 
 subj_theme <- theme_minimal() +
   theme(
