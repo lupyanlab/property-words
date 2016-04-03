@@ -21,8 +21,9 @@ from labtools.dynamic_mask import DynamicMask
 from labtools.trials_functions import (counterbalance, expand, extend,
                                        add_block, smart_shuffle)
 
+
 class Participant(UserDict):
-    """ Store participant data and provide helper functions.
+    """Manage participant data.
 
     >>> participant = Participant(subj_id=100, seed=539,
                                   _order=['subj_id', 'seed'])
@@ -38,12 +39,12 @@ class Participant(UserDict):
     DATA_DELIMITER = ','
 
     def __init__(self, subj_id, **kwargs):
-        """ Standard dict constructor.
+        """Standard dict constructor with keywords.
 
         subj_id is required and is used in the creation of the data file.
 
-        Saves _order if provided. Raises an AssertionError if _order
-        isn't exhaustive of kwargs.
+        Saves _order if provided. Defensively raises an AssertionError if
+        _order isn't exhaustive of kwargs.
         """
         kwargs['subj_id'] = subj_id
 
@@ -53,6 +54,7 @@ class Participant(UserDict):
         not_exhaustive_msg = "order not exhaustive of kwargs"
         assert set(self._order) == set(kwargs), not_exhaustive_msg
 
+        # standard practice for extending UserDict class
         self.data = dict(**kwargs)
 
     def keys(self):
@@ -69,7 +71,10 @@ class Participant(UserDict):
         return self._data_file
 
     def write_header(self, trial_col_names):
-        """ Writes the names of the columns and saves the order. """
+        """Writes the names of the columns to the data file.
+
+        Column names are saved for writing trial data, later.
+        """
         self._col_names = self._order + trial_col_names
         self._write_line(self.DATA_DELIMITER.join(self._col_names))
 
